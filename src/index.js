@@ -205,6 +205,7 @@ const install = function(Vue, opts = {}) {
 };
 
 /* istanbul ignore if */
+// 当使用 cdn 方式引入时 会调用
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }

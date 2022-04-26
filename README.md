@@ -5,6 +5,8 @@
 - 封装了 make (详见项目根目录 Makefile)
 - 添加新组件 时  只用使用 make new ccc 就可以添加 13个文件 专注于开发组件本身
 - 可以 make paly 起一个小项目  在 examples/play 中引入 新组件  方便 新组件 开发调试
+- 工程化
+    - build 目录下的工程化配置和脚本
 
 ### 官网
 - examples文件夹就是官网的项目
