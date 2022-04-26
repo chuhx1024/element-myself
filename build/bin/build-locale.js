@@ -1,3 +1,21 @@
+// 将 /src/locale/lang 下 ESM 风格的文件 转换成 lib/umd/locale 文件夹下的 UMD 风格
+// UMD的全称为Universal Module Definition，就是一种javascript通用模块定义规范，
+// 让你的模块能在javascript所有运行环境中发挥作用。它就是将AMD和Commonjs整合起来,
+// 使得代码在不同环境都可以正常运行.
+/**
+ * (function(window, factory){
+ *    if (typeof exports === 'object') {
+ *      module.exports = factory()
+ *    } else if (typeof define === 'function' && define.amd) {
+ *      define(factory)
+ *    } else {
+ *      window.eventUtil = factory()
+ *  }
+ *  })(this,function () {
+ *    //    do something
+ *  })
+ */
+
 var fs = require('fs');
 var save = require('file-save');
 var resolve = require('path').resolve;
