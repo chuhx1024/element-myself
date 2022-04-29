@@ -1,3 +1,5 @@
+// 目的是生成 packages/theme-chalk/src/index.scss 文件
+// 项目中 每个组件的样式不是写在 .vue 中 而是单独的 .scss中
 var fs = require('fs');
 var path = require('path');
 var Components = require('../../components.json');
